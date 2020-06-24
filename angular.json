@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tp5"
+    }
+  },
+  "defaultProject": "tp5",
+  "cli": {
+    "analytics": false
+  }
 }
