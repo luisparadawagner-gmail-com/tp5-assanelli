@@ -17,11 +17,11 @@ export interface Persona {
 export class ConsultarPersonaComponent implements OnInit {
   @Input() consultarPersona: any;
 
-  personas: Persona[] = [
-		{ nombre: 'Diego', apellido: 'Maradona', edad: 59, domicilio: 'Bs As'},
-		{ nombre: 'Leo', apellido: 'Messi', edad: 30 , domicilio: 'Barcelona'},
-		{ nombre: 'Carlos', apellido: 'Teves', edad: 33 , domicilio: 'Bs. As'}
-	];
+  // personas: Persona[] = [
+	// 	{ nombre: 'Diego', apellido: 'Maradona', edad: 59, domicilio: 'Bs As'},
+	// 	{ nombre: 'Leo', apellido: 'Messi', edad: 30 , domicilio: 'Barcelona'},
+	// 	{ nombre: 'Carlos', apellido: 'Teves', edad: 33 , domicilio: 'Bs. As'}
+	// ];
 
   displayedColumns: string[] = [ 'nombre', 'apellido', 'edad', 'domicilio', 'editar' ];
   dataSource : any[]= [];
