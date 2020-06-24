@@ -1,0 +1,8 @@
+[
+    { "nombre": "Diego", "apellido": "Maradona", "edad": 59, "domicilio": "Bs As" },
+    { "nombre": "Leo", "apellido": "Messi", "edad": 30, "domicilio": "Barcelona" },
+    { "nombre": "Pedrito", "apellido": "Torres", "edad": 55, "domicilio": "Cipolleti" },
+    { "nombre": "Nico", "apellido": "Assanelli", "edad": 30, "domicilio": "Neuquen" },
+    { "nombre": "Carlos", "apellido": "Teves", "edad": 33, "domicilio": "Bs. As" }
+
+]

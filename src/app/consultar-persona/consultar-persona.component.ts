@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import {ConsultarPersonaService} from './../servicios/consultar-persona-service';
 
 export interface Persona {
 	nombre: string;
@@ -23,12 +24,20 @@ export class ConsultarPersonaComponent implements OnInit {
 	];
 
   displayedColumns: string[] = [ 'nombre', 'apellido', 'edad', 'domicilio', 'editar' ];
-  dataSource = this.personas;
+  dataSource : any[]= [];
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private consultarPersonaService: ConsultarPersonaService) { }
 
   ngOnInit(): void {
+    this.getPersonas();
   }
+  getPersonas(){
+    this.consultarPersonaService.getPersonas().subscribe((personas) => {
+
+			this.dataSource = personas;
+		});
+  }
+
   editar(element){
     this.router.navigate(['/crear-persona', element])
 
